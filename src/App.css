@@ -32,7 +32,77 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  background-image: linear-gradient(to bottom, #1b1b1b, #00000022);
+  padding: 10px;
+  height: 10vh;
+  transition: all 147ms ease-in-out;
+}
+
+.navbar:hover {
+  background-image: linear-gradient(to bottom, #1b1b1b, #360000ee);
+  box-shadow: 0px 2px 6px #1b1b1bcc;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  list-style-type: none;
+  margin: 1vh auto 0 auto;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Aboreto',
+    'Cinzel', serif,
+    'Italianno', cursive,
+    'Uncial Anve';
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px #aaaaaaaa;
+  user-select: none;
+}
+
+.navbar a:hover {
+  color: #dd1717;
+  text-shadow: none;
+}
+
+.navbar a:active {
+  color: #1a8e6f;
+  text-shadow: 2px 2px 2px #630560;
+}
+
+.logo {
+  font-family: 'Aniyah Personal Use', Aboreto, cursive, monospace;
+  color: #ffffff;
+  padding: 1vh 0 0 0;
+  user-select: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    height: 12vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    height: 8vh;
+  }
+
+  .navbar a {
+    font-size: 1rem;
   }
 }
